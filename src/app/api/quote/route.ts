@@ -77,18 +77,47 @@ export async function POST(request: Request) {
       campaign: leadRecord.attribution.campaign
     });
 
-    // 3. Optional CRM Webhook Dispatch
-    const crmWebhook = process.env.CRM_WEBHOOK_URL;
-    if (crmWebhook) {
+    // 3. CRM & Nova Echo AI Webhook Dispatch
+    const webhookUrl = process.env.NOVA_ECHO_WEBHOOK_URL || process.env.CRM_WEBHOOK_URL;
+    if (webhookUrl) {
       try {
-        await fetch(crmWebhook, {
+        const nameParts = leadRecord.customer_name.split(' ');
+        const firstName = nameParts[0] || leadRecord.customer_name;
+        const lastName = nameParts.slice(1).join(' ') || '';
+
+        const novaEchoPayload = {
+          ...leadRecord,
+          first_name: firstName,
+          last_name: lastName,
+          phone: leadRecord.customer_phone,
+          email: leadRecord.customer_email,
+          tags: [
+            'Maine-Roofing',
+            body.propertyType === 'commercial' ? 'Commercial ($100)' : 'Residential ($50)',
+            body.service
+          ],
+          source: leadRecord.attribution.source || 'Website Quote Form',
+          metadata: {
+            agency: 'EverGreen MKT',
+            payout_usd: leadRecord.estimated_payout_usd,
+            location: leadRecord.property_location,
+            gclid: leadRecord.attribution.gclid,
+            utm_campaign: leadRecord.attribution.campaign,
+            landing_page: leadRecord.attribution.landing_page
+          }
+        };
+
+        await fetch(webhookUrl, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(leadRecord)
+          headers: {
+            'Content-Type': 'application/json',
+            'User-Agent': 'EverGreen-MaineRoofing-LeadDispatcher/1.0'
+          },
+          body: JSON.stringify(novaEchoPayload)
         });
       } catch (crmErr) {
-        console.error('Failed to forward lead to CRM webhook:', crmErr);
-        // We still return success to the customer so they don't see an error
+        console.error('Failed to forward lead to Nova Echo AI / CRM webhook:', crmErr);
+        // We still return success to the customer so user experience is not disrupted
       }
     }
 
