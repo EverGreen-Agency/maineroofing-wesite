@@ -169,6 +169,12 @@ export function Header() {
               Projects
             </Link>
             <Link
+              href="/blog"
+              className="text-sm font-semibold text-slate-700 hover:text-crimson-600 transition-colors"
+            >
+              Blog
+            </Link>
+            <Link
               href="/about"
               className="text-sm font-semibold text-slate-700 hover:text-crimson-600 transition-colors"
             >
@@ -291,6 +297,13 @@ export function Header() {
               className="px-3 py-2 rounded-lg hover:bg-slate-100"
             >
               Recent Projects & Case Studies
+            </Link>
+            <Link
+              href="/blog"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-3 py-2 rounded-lg hover:bg-slate-100"
+            >
+              Guides & Blog
             </Link>
             <Link
               href="/about"

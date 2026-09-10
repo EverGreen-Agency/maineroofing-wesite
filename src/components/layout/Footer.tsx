@@ -145,6 +145,9 @@ export function Footer() {
           </p>
 
           <div className="flex items-center gap-6">
+            <Link href="/blog" className="hover:text-slate-400 transition-colors">
+              Knowledge Hub & Blog
+            </Link>
             <Link href="/privacy-policy" className="hover:text-slate-400 transition-colors">
               Privacy Policy
             </Link>
