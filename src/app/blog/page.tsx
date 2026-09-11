@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { business } from '@/config/business';
-import { BookOpen, Calendar, Clock, ArrowRight, ShieldCheck, Award, Snowflake, Sparkles, AlertOctagon, Scale } from 'lucide-react';
+import { BookOpen, Calendar, Clock, ArrowRight, ShieldCheck, Award, Snowflake, Sparkles, AlertOctagon, Scale, Droplets } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Maine Roofing Insights & Knowledge Hub | Maine Roofing Scapes & Repairs',
@@ -13,11 +13,24 @@ export const metadata: Metadata = {
     'ice dam removal maine guide',
     'metal roof cost maine',
     'emergency roof repair maine',
-    'how to choose roofing contractor maine'
+    'how to choose roofing contractor maine',
+    'brown water stain ceiling after snow'
   ]
 };
 
 const articles = [
+  {
+    slug: 'brown-water-stain-ceiling-after-snow-maine',
+    title: 'Brown Water Stain on Your Ceiling After Snow in Maine? 4 Causes, Dangers & Exact Next Steps',
+    excerpt: 'Circular brown stain appeared on your ceiling after a snowstorm? Learn why melted roof ice leaches wood tannins, the screwdriver relief trick, and how to tell an ice dam from a pipe leak.',
+    category: 'Homeowner Symptom Guide',
+    categoryColor: 'bg-amber-100 text-amber-900',
+    icon: Droplets,
+    image: '/images/hero/standing-seam-metal-snow.jpg',
+    readTime: '8 min read',
+    publishedDate: 'September 2026',
+    author: 'Forensic Roof Inspection Team'
+  },
   {
     slug: 'commercial-roof-restoration-vs-replacement',
     title: 'Commercial Roof Restoration vs. Replacement in Maine: How Fluid Coatings Save 50% & Section 179 Tax Benefits',

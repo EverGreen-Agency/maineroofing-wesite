@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/roof-inspection',
     '/projects',
     '/blog',
+    '/blog/brown-water-stain-ceiling-after-snow-maine',
     '/blog/commercial-roof-restoration-vs-replacement',
     '/blog/emergency-roof-repair-storm-damage-maine',
     '/blog/how-to-choose-roofing-contractor-maine',
