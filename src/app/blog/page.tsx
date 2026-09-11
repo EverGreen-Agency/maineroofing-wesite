@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { business } from '@/config/business';
-import { BookOpen, Calendar, Clock, ArrowRight, ShieldCheck, Award, Snowflake, Sparkles, AlertOctagon, Scale, Droplets } from 'lucide-react';
+import { BookOpen, Calendar, Clock, ArrowRight, ShieldCheck, Award, Snowflake, Sparkles, AlertOctagon, Scale, Droplets, DollarSign, Compass } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Maine Roofing Insights & Knowledge Hub | Maine Roofing Scapes & Repairs',
@@ -14,11 +14,50 @@ export const metadata: Metadata = {
     'metal roof cost maine',
     'emergency roof repair maine',
     'how to choose roofing contractor maine',
-    'brown water stain ceiling after snow'
+    'brown water stain ceiling after snow',
+    'section 179 commercial roof maine',
+    'commercial roof snow load capacity maine',
+    'how long do roof shingles last in maine'
   ]
 };
 
 const articles = [
+  {
+    slug: 'section-179-commercial-roof-replacement-tax-deduction-maine',
+    title: 'Section 179 Commercial Roof Tax Deduction: How Maine Business Owners Write Off 100% of Roof Costs',
+    excerpt: 'How commercial property owners and CFOs in Maine can write off up to 100% of flat roof replacements, TPO membranes, coatings, and repairs in Year One under current IRS Section 179 rules.',
+    category: 'Commercial Finance & Tax Strategy',
+    categoryColor: 'bg-emerald-100 text-emerald-900',
+    icon: DollarSign,
+    image: '/images/case-studies/doubletree/after.jpg',
+    readTime: '9 min read',
+    publishedDate: 'September 2026',
+    author: 'Commercial Finance & Engineering Team'
+  },
+  {
+    slug: 'commercial-roof-snow-load-calculator-maine',
+    title: 'Commercial Roof Snow Load Capacity in Maine: How Much Snow Can Your Building Hold Before Collapse?',
+    excerpt: 'Snow weight calculation tables (fresh powder vs. wet snow vs. solid ice), 5 warning signs of structural deflection, parapet drifting risks, and safe steam clearing protocols.',
+    category: 'Structural Engineering & Safety',
+    categoryColor: 'bg-blue-100 text-blue-900',
+    icon: Scale,
+    image: '/images/case-studies/doubletree/during.jpg',
+    readTime: '8 min read',
+    publishedDate: 'September 2026',
+    author: 'Commercial Inspection & Structural Team'
+  },
+  {
+    slug: 'how-long-do-roof-shingles-last-in-maine',
+    title: 'How Long Do Asphalt Shingles Really Last in Maine Coastal Climates? (Warranty vs. Real Lifespan)',
+    excerpt: 'Why architectural shingles in Maine typically last 18–22 years instead of 30, the impact of Atlantic salt air and freeze-thaw cycles, and how to navigate the 15-year insurance cancellation crisis.',
+    category: 'Coastal Materials & Durability',
+    categoryColor: 'bg-slate-100 text-slate-900',
+    icon: Compass,
+    image: '/images/services/replacement.jpg',
+    readTime: '8 min read',
+    publishedDate: 'September 2026',
+    author: 'Residential Inspection & Materials Team'
+  },
   {
     slug: 'brown-water-stain-ceiling-after-snow-maine',
     title: 'Brown Water Stain on Your Ceiling After Snow in Maine? 4 Causes, Dangers & Exact Next Steps',
