@@ -13,7 +13,17 @@ export const metadata: Metadata = {
     'asphalt shingle curling signs',
     'homeowners insurance roof age maine',
     'shingle roof replacement portland maine'
-  ]
+  ],
+  openGraph: {
+    title: 'Asphalt Shingle Lifespan in Maine: Warranty vs. Reality (18–22 Years)',
+    description: 'Why Maine coastal shingles fail 30% earlier than advertised. Freeze-thaw cycles, salt air, nor\'easters and the insurance cancellation risk after 15 years.',
+    images: [{ url: '/images/hero/hero-residential-coastal.png', width: 1200, height: 630, alt: 'Residential Coastal Roof Replacement in Maine' }],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/hero/hero-residential-coastal.png'],
+  }
 };
 
 const faqSchema = {
@@ -89,7 +99,7 @@ export default function ShingleLifespanArticle() {
         {/* Hero Visual */}
         <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-xl border border-slate-200">
           <Image
-            src="/images/services/replacement.jpg"
+            src="/images/hero/hero-residential-coastal.png"
             alt="New Architectural Shingle Roof Replacement in Saco Maine"
             fill
             className="object-cover"

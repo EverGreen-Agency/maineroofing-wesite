@@ -13,7 +13,17 @@ export const metadata: Metadata = {
     'irs section 179 commercial roofing 2026',
     'write off commercial roof expense maine',
     'tpo roof tax write off maine'
-  ]
+  ],
+  openGraph: {
+    title: 'Section 179 Commercial Roof Tax Deduction in Maine (2026 IRS Rules)',
+    description: 'Write off 100% of your commercial roof replacement in Year One under IRS Section 179. Maine properties qualifying for immediate $31K–$122K+ tax savings.',
+    images: [{ url: '/images/projects/doubletree-hilton-roof-restoration.jpg', width: 1200, height: 630, alt: 'Commercial Roof Restoration in South Portland Maine' }],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/projects/doubletree-hilton-roof-restoration.jpg'],
+  }
 };
 
 const faqSchema = {
@@ -89,7 +99,7 @@ export default function Section179Article() {
         {/* Featured Case Visual */}
         <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-xl border border-slate-200">
           <Image
-            src="/images/case-studies/doubletree/after.jpg"
+            src="/images/projects/doubletree-hilton-roof-restoration.jpg"
             alt="Commercial Flat Roof Replacement in South Portland Maine Qualifying for Section 179"
             fill
             className="object-cover"

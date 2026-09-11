@@ -88,7 +88,7 @@ export default function ChooseContractorArticle() {
         {/* Featured Image */}
         <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md">
           <Image
-            src="/images/hero/hero-roof-inspection-drone.jpg"
+            src="/images/hero/roof-inspection-crew.png"
             alt="Professional Roofing Contractor Conducting Roof Inspection in Maine"
             fill
             priority

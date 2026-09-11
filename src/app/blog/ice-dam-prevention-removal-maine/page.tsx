@@ -88,7 +88,7 @@ export default function IceDamArticle() {
         {/* Featured Image */}
         <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md">
           <Image
-            src="/images/hero/standing-seam-metal-snow.jpg"
+            src="/images/hero/ice-dam-removal-maine.png"
             alt="Winter Ice Dam and Snow Accumulation on Maine Roof Eaves"
             fill
             priority

@@ -47,10 +47,10 @@ export const metadata: Metadata = {
     description: 'Commercial flat roof restorations, standing seam metal, architectural shingles, and rapid winter ice dam removal across Maine & NH. Call (207) 383-1646.',
     images: [
       {
-        url: '/images/hero/hero-craftsman-sunset.png',
-        width: 1672,
-        height: 941,
-        alt: 'Maine Roofing Scapes & Repairs - Roofer Working on Coastal Maine Property',
+        url: '/images/og-maineroofing.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Maine Roofing Scapes & Repairs - Commercial & Residential Roofing Specialists in Maine & NH',
       }
     ]
   },
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Maine Roofing Scapes & Repairs | Roofing Specialists',
     description: 'Commercial & residential roofing built for severe Maine winters. Call (207) 383-1646.',
-    images: ['/images/hero/hero-craftsman-sunset.png'],
+    images: ['/images/og-maineroofing.jpg'],
   },
   alternates: {
     canonical: 'https://maineroofingscapesrepairs.com'

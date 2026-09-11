@@ -88,7 +88,7 @@ export default function StormDamageArticle() {
         {/* Featured Image */}
         <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md">
           <Image
-            src="/images/hero/hero-roof-repair-crane.jpg"
+            src="/images/hero/hero-roofer-inspection.png"
             alt="Emergency Storm Damage Roof Repair and Structural Tarping in Maine"
             fill
             priority

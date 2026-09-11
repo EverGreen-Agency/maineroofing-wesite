@@ -13,7 +13,17 @@ export const metadata: Metadata = {
     'flat roof snow load calculator',
     'commercial roof collapse warning signs winter',
     'snow removal commercial flat roof maine'
-  ]
+  ],
+  openGraph: {
+    title: 'Commercial Roof Snow Load in Maine: Weight Tables & Collapse Warning Signs',
+    description: 'Snow density tables, 5 structural overload warning signs, parapet drifting hazards, and safe steam removal protocols for Maine commercial flat roofs.',
+    images: [{ url: '/images/hero/metal-roof-winter-snow.png', width: 1200, height: 630, alt: 'Commercial Roof Heavy Snow Accumulation in Maine Winter' }],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/hero/metal-roof-winter-snow.png'],
+  }
 };
 
 const faqSchema = {
@@ -89,7 +99,7 @@ export default function SnowLoadArticle() {
         {/* Hero Visual */}
         <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-xl border border-slate-200">
           <Image
-            src="/images/case-studies/doubletree/during.jpg"
+            src="/images/hero/metal-roof-winter-snow.png"
             alt="Commercial Flat Roof with Heavy Maine Snow Accumulation"
             fill
             className="object-cover"

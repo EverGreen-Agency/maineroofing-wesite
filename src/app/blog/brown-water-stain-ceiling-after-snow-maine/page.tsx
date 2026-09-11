@@ -88,7 +88,7 @@ export default function BrownStainArticle() {
         {/* Featured Image */}
         <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md">
           <Image
-            src="/images/hero/standing-seam-metal-snow.jpg"
+            src="/images/hero/metal-roof-winter-snow.png"
             alt="Snow Accumulation on Roof Causing Ceiling Water Stains in Maine"
             fill
             priority
