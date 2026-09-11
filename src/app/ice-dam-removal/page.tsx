@@ -13,8 +13,28 @@ export const metadata: Metadata = {
     'steam ice dam removal maine',
     'roof snow removal maine',
     'ice dam prevention heating cables maine'
-  ]
+  ],
+  openGraph: {
+    title: 'Emergency Ice Dam Removal & Steam Clearing in Maine & NH',
+    description: 'Zero shingle damage low-pressure steam removal. Stop emergency winter ceiling leaks fast. Call (207) 383-1646 for same-day dispatch.',
+    url: 'https://maineroofingscapesrepairs.com/ice-dam-removal',
+    images: [
+      {
+        url: '/images/hero/metal-roof-winter-snow.png',
+        width: 1200,
+        height: 630,
+        alt: 'Maine Emergency Ice Dam Removal and Winter Snow Clearing Services',
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Maine Emergency Ice Dam Removal | Safe Steam Services',
+    description: 'Safe steam clearing & emergency winter leak dispatch. Call (207) 383-1646.',
+    images: ['/images/hero/metal-roof-winter-snow.png'],
+  }
 };
+
 
 export default function IceDamRemovalPage() {
   return (

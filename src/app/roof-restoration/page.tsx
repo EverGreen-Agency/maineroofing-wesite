@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 import { business } from '@/config/business';
 import { QuoteForm } from '@/components/forms/QuoteForm';
+import { RoiCalculator } from '@/components/calculator/RoiCalculator';
 import { Award, ShieldCheck, DollarSign, Clock, CheckCircle2, Building2, Phone, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -13,8 +14,28 @@ export const metadata: Metadata = {
     'commercial flat roof coating',
     'silicone roof restoration',
     'doubletree hilton roof restoration'
-  ]
+  ],
+  openGraph: {
+    title: 'Commercial Roof Restoration Maine & NH | DoubleTree by Hilton Case Study',
+    description: 'Save 40-50% vs costly roof tear-offs with seamless liquid silicone coatings. 15-20 Year NDL Warranties & Year-1 Section 179 tax write-offs.',
+    url: 'https://maineroofingscapesrepairs.com/roof-restoration',
+    images: [
+      {
+        url: '/images/projects/doubletree-hilton-roof-restoration.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'DoubleTree by Hilton Hotel Commercial Roof Restoration Project by Maine Roofing Scapes & Repairs',
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Commercial Roof Restoration Maine & NH | Save 40%+',
+    description: '15-20 Year Warranties & Section 179 tax deduction. Call (207) 383-1646.',
+    images: ['/images/projects/doubletree-hilton-roof-restoration.jpg'],
+  }
 };
+
 
 export default function RoofRestorationPage() {
   return (
@@ -154,8 +175,14 @@ export default function RoofRestorationPage() {
               </div>
             </div>
           </div>
+
+          {/* Embedded B2B ROI Calculator */}
+          <div className="pt-12">
+            <RoiCalculator />
+          </div>
         </div>
       </section>
+
 
       {/* Why Facility Managers Choose Restoration */}
       <section className="py-20 bg-slate-50 border-t border-slate-200">

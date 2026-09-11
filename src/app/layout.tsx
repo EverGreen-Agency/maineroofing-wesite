@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { MobileStickyBar } from '@/components/layout/MobileStickyBar';
 import { AnalyticsProviders } from '@/components/tracking/AnalyticsProviders';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { business } from '@/config/business';
 
-const inter = Inter({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-sans',
@@ -80,15 +81,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} font-sans scroll-smooth antialiased`}>
+    <html lang="en" className={`${plusJakarta.variable} font-sans scroll-smooth antialiased w-full max-w-full overflow-x-clip`}>
       <head>
         <JsonLd />
       </head>
-      <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-crimson-600 selection:text-white">
+      <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-crimson-600 selection:text-white w-full max-w-full overflow-x-clip pb-18 md:pb-0">
         <AnalyticsProviders />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 w-full max-w-full overflow-x-clip">{children}</main>
         <Footer />
+        <MobileStickyBar />
       </body>
     </html>
   );

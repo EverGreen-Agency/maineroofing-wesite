@@ -16,8 +16,13 @@
 }
 
 @layer base {
-  html {
+  html, body {
+    max-width: 100%;
+    overflow-x: clip;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
   
   /* Focus rings for WCAG 2.2 AA accessibility */
@@ -25,4 +30,10 @@
     outline: 2px solid #c8102e;
     outline-offset: 2px;
   }
+
+  /* Safe Area insets */
+  .pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom), 1rem);
+  }
 }
+
