@@ -62,6 +62,15 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://maineroofingscapesrepairs.com'
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   }
 };
 

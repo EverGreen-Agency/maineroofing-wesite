@@ -48,10 +48,10 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-44 h-14 sm:w-52 sm:h-16">
+            <div className="relative w-48 h-14 sm:w-56 sm:h-16">
               <Image
-                src="/images/logo.png"
-                alt="Maine Roofing Scapes & Repairs Logo"
+                src="/images/logos/maine-roofing-scapes-repairs-logo-light.png"
+                alt="Maine Roofing Scapes & Repairs - Roofing Contractor in Maine & NH"
                 fill
                 priority
                 className="object-contain object-left group-hover:opacity-95 transition-opacity"

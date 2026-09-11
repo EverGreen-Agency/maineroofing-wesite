@@ -10,12 +10,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Col 1 & 2: Brand & Entity Information */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="relative w-48 h-14 bg-white/10 rounded-lg p-2 backdrop-blur-xs">
+            <div className="relative w-56 h-16">
               <Image
-                src="/images/logo.png"
-                alt="Maine Roofing Scapes & Repairs"
+                src="/images/logos/maine-roofing-scapes-repairs-logo-dark.png"
+                alt="Maine Roofing Scapes & Repairs - Roofing Contractor Maine & NH"
                 fill
-                className="object-contain object-left invert"
+                className="object-contain object-left"
               />
             </div>
 
