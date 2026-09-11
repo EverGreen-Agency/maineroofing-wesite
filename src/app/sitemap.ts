@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/projects',
     '/blog',
     '/blog/commercial-roof-restoration-vs-replacement',
+    '/blog/emergency-roof-repair-storm-damage-maine',
+    '/blog/how-to-choose-roofing-contractor-maine',
     '/blog/ice-dam-prevention-removal-maine',
     '/blog/standing-seam-metal-roof-cost-maine',
     '/about',

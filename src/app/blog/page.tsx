@@ -2,17 +2,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { business } from '@/config/business';
-import { BookOpen, Calendar, Clock, ArrowRight, ShieldCheck, Award, Snowflake, Sparkles } from 'lucide-react';
+import { BookOpen, Calendar, Clock, ArrowRight, ShieldCheck, Award, Snowflake, Sparkles, AlertOctagon, Scale } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Maine Roofing Insights & Knowledge Hub | Maine Roofing Scapes & Repairs',
-  description: 'Expert guides on commercial roof restoration, standing seam metal roofing, and winter ice dam prevention in Maine. Unbiased contractor advice from local specialists.',
+  description: 'Expert guides on commercial roof restoration, standing seam metal roofing, winter ice dam prevention, storm repair, and contractor vetting in Maine. Unbiased contractor advice from local specialists.',
   keywords: [
     'maine roofing blog',
     'commercial roof restoration maine',
     'ice dam removal maine guide',
     'metal roof cost maine',
-    'maine roofing contractor advice'
+    'emergency roof repair maine',
+    'how to choose roofing contractor maine'
   ]
 };
 
@@ -28,6 +29,30 @@ const articles = [
     readTime: '6 min read',
     publishedDate: 'September 2026',
     author: 'Maine Roofing Commercial Technical Team'
+  },
+  {
+    slug: 'emergency-roof-repair-storm-damage-maine',
+    title: 'Emergency Storm Damage Roof Repair in Maine: 2026 Insurance Claim Steps, Tarping & Freeze-Thaw Leak Detection',
+    excerpt: 'What to do when nor’easters or heavy snow cause active leaks. Step-by-step insurance claim protocol, emergency tarping costs, and how to avoid claim denials.',
+    category: 'Storm Damage & Emergency',
+    categoryColor: 'bg-crimson-100 text-crimson-800',
+    icon: AlertOctagon,
+    image: '/images/hero/hero-roof-repair-crane.jpg',
+    readTime: '9 min read',
+    publishedDate: 'September 2026',
+    author: 'Rapid Response Storm Division'
+  },
+  {
+    slug: 'how-to-choose-roofing-contractor-maine',
+    title: 'How to Choose a Roofing Contractor in Maine (2026 Checklist): Licenses, Insurance, Local Scams & Red Flags',
+    excerpt: 'Maine has no statewide contractor license. Learn Maine’s deposit laws (33% max), how to verify workers’ comp insurance with brokers, and 10 questions to ask before hiring.',
+    category: 'Consumer Guide',
+    categoryColor: 'bg-purple-100 text-purple-800',
+    icon: Scale,
+    image: '/images/hero/hero-roof-inspection-drone.jpg',
+    readTime: '9 min read',
+    publishedDate: 'September 2026',
+    author: 'Consumer Protection Due Diligence Team'
   },
   {
     slug: 'ice-dam-prevention-removal-maine',
