@@ -69,6 +69,47 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Legacy Maine & Turner blog post 301 redirects (preserving link juice)
+      {
+        source: '/roof-installation-in-turner-me',
+        destination: '/roof-replacement',
+        permanent: true,
+      },
+      {
+        source: '/roof-installation-in-turner-me/',
+        destination: '/roof-replacement',
+        permanent: true,
+      },
+      {
+        source: '/roof-inspection-in-turner-me',
+        destination: '/roof-inspection',
+        permanent: true,
+      },
+      {
+        source: '/roof-inspection-in-turner-me/',
+        destination: '/roof-inspection',
+        permanent: true,
+      },
+      {
+        source: '/roof-repair-in-turner-me',
+        destination: '/roof-repair',
+        permanent: true,
+      },
+      {
+        source: '/roof-repair-in-turner-me/',
+        destination: '/roof-repair',
+        permanent: true,
+      },
+      {
+        source: '/shingle-roof-replacement-in-turner-me',
+        destination: '/roof-replacement',
+        permanent: true,
+      },
+      {
+        source: '/shingle-roof-replacement-in-turner-me/',
+        destination: '/roof-replacement',
+        permanent: true,
+      },
       // Prohibited services redirection to homepage with warning
       {
         source: '/gutters',

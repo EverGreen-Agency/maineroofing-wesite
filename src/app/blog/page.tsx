@@ -29,7 +29,7 @@ const articles = [
     category: 'Commercial Finance & Tax Strategy',
     categoryColor: 'bg-emerald-100 text-emerald-900',
     icon: DollarSign,
-    image: '/images/case-studies/doubletree/after.jpg',
+    image: '/images/projects/doubletree-hilton-roof-restoration.jpg',
     readTime: '9 min read',
     publishedDate: 'September 2026',
     author: 'Commercial Finance & Engineering Team'
@@ -41,7 +41,7 @@ const articles = [
     category: 'Structural Engineering & Safety',
     categoryColor: 'bg-blue-100 text-blue-900',
     icon: Scale,
-    image: '/images/case-studies/doubletree/during.jpg',
+    image: '/images/hero/metal-roof-winter-snow.png',
     readTime: '8 min read',
     publishedDate: 'September 2026',
     author: 'Commercial Inspection & Structural Team'
@@ -53,7 +53,7 @@ const articles = [
     category: 'Coastal Materials & Durability',
     categoryColor: 'bg-slate-100 text-slate-900',
     icon: Compass,
-    image: '/images/services/replacement.jpg',
+    image: '/images/hero/hero-residential-coastal.png',
     readTime: '8 min read',
     publishedDate: 'September 2026',
     author: 'Residential Inspection & Materials Team'
@@ -65,7 +65,7 @@ const articles = [
     category: 'Homeowner Symptom Guide',
     categoryColor: 'bg-amber-100 text-amber-900',
     icon: Droplets,
-    image: '/images/hero/standing-seam-metal-snow.jpg',
+    image: '/images/hero/metal-roof-winter-snow.png',
     readTime: '8 min read',
     publishedDate: 'September 2026',
     author: 'Forensic Roof Inspection Team'
@@ -89,7 +89,7 @@ const articles = [
     category: 'Storm Damage & Emergency',
     categoryColor: 'bg-crimson-100 text-crimson-800',
     icon: AlertOctagon,
-    image: '/images/hero/hero-roof-repair-crane.jpg',
+    image: '/images/hero/hero-roofer-inspection.png',
     readTime: '9 min read',
     publishedDate: 'September 2026',
     author: 'Rapid Response Storm Division'
@@ -101,7 +101,7 @@ const articles = [
     category: 'Consumer Guide',
     categoryColor: 'bg-purple-100 text-purple-800',
     icon: Scale,
-    image: '/images/hero/hero-roof-inspection-drone.jpg',
+    image: '/images/hero/roof-inspection-crew.png',
     readTime: '9 min read',
     publishedDate: 'September 2026',
     author: 'Consumer Protection Due Diligence Team'
@@ -113,7 +113,7 @@ const articles = [
     category: 'Winter Defense & Ice Dams',
     categoryColor: 'bg-blue-100 text-blue-800',
     icon: Snowflake,
-    image: '/images/hero/standing-seam-metal-snow.jpg',
+    image: '/images/hero/ice-dam-removal-maine.png',
     readTime: '7 min read',
     publishedDate: 'September 2026',
     author: 'Emergency Winter Response Division'
