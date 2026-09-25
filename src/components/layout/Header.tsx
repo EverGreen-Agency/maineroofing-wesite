@@ -72,11 +72,11 @@ export function Header() {
       {/* Main Header Navigation Bar */}
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          {/* Brand Logo (Using light transparent variant on dark glass) */}
+          {/* Brand Logo (Using dark-background variant on dark glass) */}
           <Link href="/" className="flex items-center gap-2 group shrink-0" onClick={() => setMobileMenuOpen(false)}>
             <div className="relative w-36 h-9 sm:w-44 sm:h-11 md:w-52 md:h-13">
               <Image
-                src="/images/logos/maine-roofing-scapes-repairs-logo-light.png"
+                src="/images/logos/maine-roofing-scapes-repairs-logo-dark.png"
                 alt="Maine Roofing Scapes & Repairs - Commercial & Residential Roofing Contractor Maine & NH"
                 fill
                 priority
