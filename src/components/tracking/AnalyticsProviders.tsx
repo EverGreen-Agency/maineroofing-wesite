@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Script from 'next/script';
 import { initializeAttribution } from '@/lib/tracking/attribution';
 
@@ -9,27 +9,39 @@ const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || 'ygbhburnl0';
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-GRG6KCYJTR';
 
 export function AnalyticsProviders() {
+  const [isProduction, setIsProduction] = useState<boolean>(false);
+
   useEffect(() => {
+    // Only track on the canonical production domain to keep preview/staging data 100% clean
+    const hostname = window.location.hostname;
+    const isProd = hostname === 'maineroofingscapesrepairs.com' || hostname === 'www.maineroofingscapesrepairs.com';
+    setIsProduction(isProd);
+
+    if (!isProd) {
+      return;
+    }
+
     // 1. Initialize persistent marketing attribution
     initializeAttribution();
 
     // 2. Setup Consent Mode v2 Defaults
-    if (typeof window !== 'undefined') {
-      window.dataLayer = window.dataLayer || [];
-      // Default gtag shim
-      function gtag(...args: unknown[]) {
-        window.dataLayer?.push(args as unknown as Record<string, unknown>);
-      }
-      
-      gtag('consent', 'default', {
-        analytics_storage: 'granted', // Default grant or update based on user consent
-        ad_storage: 'denied',
-        ad_user_data: 'denied',
-        ad_personalization: 'denied',
-        wait_for_update: 500
-      });
+    window.dataLayer = window.dataLayer || [];
+    function gtag(...args: unknown[]) {
+      window.dataLayer?.push(args as unknown as Record<string, unknown>);
     }
+    
+    gtag('consent', 'default', {
+      analytics_storage: 'granted',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
+    });
   }, []);
+
+  if (!isProduction) {
+    return null;
+  }
 
   return (
     <>

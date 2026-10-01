@@ -29,6 +29,11 @@ declare global {
 
 export function pushToDataLayer(data: DataLayerEvent): void {
   if (typeof window === 'undefined') return;
+  // Ignore tracking on preview/dev environments to keep analytics clean
+  const host = window.location.hostname;
+  const isProd = host === 'maineroofingscapesrepairs.com' || host === 'www.maineroofingscapesrepairs.com';
+  if (!isProd) return;
+
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push(data);
 }
