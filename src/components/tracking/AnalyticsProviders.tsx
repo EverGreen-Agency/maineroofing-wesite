@@ -4,8 +4,9 @@ import { useEffect } from 'react';
 import Script from 'next/script';
 import { initializeAttribution } from '@/lib/tracking/attribution';
 
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
-const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID;
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-TH5DS4QJ';
+const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || 'ygbhburnl0';
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-GRG6KCYJTR';
 
 export function AnalyticsProviders() {
   useEffect(() => {
@@ -56,6 +57,32 @@ export function AnalyticsProviders() {
               style={{ display: 'none', visibility: 'hidden' }}
             />
           </noscript>
+        </>
+      )}
+
+      {/* Google Analytics 4 Direct Stream */}
+      {GA_ID && (
+        <>
+          <Script
+            id="ga4-script"
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          />
+          <Script
+            id="ga4-init"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}', {
+                  page_path: window.location.pathname,
+                  send_page_view: true
+                });
+              `
+            }}
+          />
         </>
       )}
 
