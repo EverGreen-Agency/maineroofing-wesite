@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { business } from '@/config/business';
 import { QuoteForm } from '@/components/forms/QuoteForm';
 import { RoiCalculator } from '@/components/calculator/RoiCalculator';
+import { BeforeAfterSlider } from '@/components/showcase/BeforeAfterSlider';
 import { 
   ShieldCheck, 
   Phone, 
@@ -494,6 +495,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* INTERACTIVE BEFORE & AFTER TRANSFORMATION SHOWCASE */}
+      <BeforeAfterSlider />
 
       {/* FREQUENTLY ASKED QUESTIONS (CITABLE CONTENT FOR AI & GEO) */}
       <section className="py-20 lg:py-28 bg-slate-50 border-t border-slate-200">

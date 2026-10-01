@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/section-179-commercial-roof-replacement-tax-deduction-maine',
     '/blog/commercial-roof-snow-load-calculator-maine',
     '/blog/how-long-do-roof-shingles-last-in-maine',
+    '/service-areas/portland-me',
     '/about',
     '/reviews',
     '/contact',
