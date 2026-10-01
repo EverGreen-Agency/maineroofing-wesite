@@ -216,7 +216,7 @@ export function Header() {
               Projects
             </Link>
             <Link href="/blog" className="hover:text-crimson-400 transition-colors py-2">
-              Guides
+              Blog & Guides
             </Link>
             <Link href="/about" className="hover:text-crimson-400 transition-colors py-2">
               About
