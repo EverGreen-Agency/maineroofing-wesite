@@ -30,15 +30,16 @@
 8. `/blog/ice-dam-prevention-removal-maine` (Inverno / $50)
 9. `/blog/standing-seam-metal-roof-cost-maine` (Residencial Premium / $50)
 
-### Fase 2 (Iniciada na `develop`):
-- **Artigo 10 (Pronto para Merge):** `/blog/commercial-roof-winterization-checklist-maine`  
-  - Foco: Gestores prediais e donos de galpões no Maine antes das nevascas.  
-  - Imagem Hero: `/images/hero/commercial-roof-winterization-maine.jpg` (gerada e otimizada).  
-  - Schema: FAQPage em JSON-LD + tabelas de tolerância de carga de neve (lbs/cu.ft).
-- **Próximos Artigos Agendados:**
-  - Artigo 11: *How Heating Cables & Snow Guards Protect Coastal Maine Homes from Ice Damage*
-  - Artigo 12: *Freeze-Thaw Roof Leaks in Maine: Why Your Roof Only Leaks in January and February*
+### Fase 2 (Implementada na branch `develop`):
+- **Artigo 10:** `/blog/commercial-roof-winterization-checklist-maine` (Gestores comerciais, tabelas de neve, FAQ Schema)
+- **Artigo 11:** `/blog/heating-cables-snow-guards-maine` (Proteção costeira, cabos autoreguláveis vs fitas baratas, snow guards)
+- **Artigo 12:** `/blog/freeze-thaw-roof-leaks-maine` (Física dos vazamentos em janeiro/fevereiro, dilatação térmica, condensação no sótão)
+- **Página Local Portland, ME:** `/service-areas/portland-me` (Schema `RoofingContractor`, coordenadas geográficas, Slider Antes/Depois)
+- **Página Local Lewiston & Auburn, ME:** `/service-areas/lewiston-auburn-me` (Indústria, moinhos históricos, 65+ PSF carga de neve inland)
+- **Módulo Interativo:** `BeforeAfterSlider.tsx` na Home e nas páginas locais.
+- **Próximas Expansões:**
   - Artigo 13: *How to Safely Remove 3 Feet of Heavy Wet Snow from a Flat Commercial Roof in Maine*
+  - Página Local Bangor, ME (`/service-areas/bangor-me`)
 
 ---
 
