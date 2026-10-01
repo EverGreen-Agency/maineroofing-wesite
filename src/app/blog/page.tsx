@@ -23,6 +23,18 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'commercial-roof-winterization-checklist-maine',
+    title: 'Commercial Roof Winterization Checklist: 7 Mandatory Steps Before Maine’s First Snowstorm',
+    excerpt: 'How Maine commercial facility managers and warehouse owners prevent winter flat roof collapse, frozen scuppers, and costly moisture infiltration through a 7-step inspection protocol.',
+    category: 'Commercial Winterization & Safety',
+    categoryColor: 'bg-blue-100 text-blue-900',
+    icon: Snowflake,
+    image: '/images/hero/commercial-roof-winterization-maine.jpg',
+    readTime: '9 min read',
+    publishedDate: 'October 2026',
+    author: 'Commercial Operations & Engineering Team'
+  },
+  {
     slug: 'section-179-commercial-roof-replacement-tax-deduction-maine',
     title: 'Section 179 Commercial Roof Tax Deduction: How Maine Business Owners Write Off 100% of Roof Costs',
     excerpt: 'How commercial property owners and CFOs in Maine can write off up to 100% of flat roof replacements, TPO membranes, coatings, and repairs in Year One under current IRS Section 179 rules.',

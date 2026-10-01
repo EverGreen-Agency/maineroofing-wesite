@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/how-to-choose-roofing-contractor-maine',
     '/blog/ice-dam-prevention-removal-maine',
     '/blog/standing-seam-metal-roof-cost-maine',
+    '/blog/commercial-roof-winterization-checklist-maine',
     '/blog/section-179-commercial-roof-replacement-tax-deduction-maine',
     '/blog/commercial-roof-snow-load-calculator-maine',
     '/blog/how-long-do-roof-shingles-last-in-maine',
