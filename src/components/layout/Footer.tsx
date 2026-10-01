@@ -133,6 +133,14 @@ export function Footer() {
                   >
                     {city}
                   </Link>
+                ) : (city === 'Lewiston' || city === 'Auburn') ? (
+                  <Link
+                    key={city}
+                    href="/service-areas/lewiston-auburn-me"
+                    className="bg-slate-900 hover:bg-slate-800 border border-crimson-600/50 hover:border-crimson-400 text-crimson-300 hover:text-white px-2 py-1 rounded transition-colors font-semibold"
+                  >
+                    {city}
+                  </Link>
                 ) : (
                   <span key={city} className="bg-slate-900 border border-slate-800 text-slate-300 px-2 py-1 rounded">
                     {city}
