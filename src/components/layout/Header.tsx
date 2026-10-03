@@ -51,19 +51,14 @@ export function Header() {
             </span>
           </div>
 
-          <div className="flex items-center gap-3 shrink-0">
-            <a
-              href={business.phoneTel}
-              onClick={() => trackPhoneClick('top_bar')}
-              className="flex items-center gap-1.5 text-crimson-400 hover:text-crimson-300 font-bold transition-colors"
-            >
-              <Phone className="w-3 h-3 shrink-0" />
-              <span>{business.displayPhone}</span>
-            </a>
-            <span className="text-slate-600 hidden sm:inline">|</span>
-            <span className="text-slate-400 hidden sm:flex items-center gap-1 text-[11px]">
-              <Clock className="w-3 h-3 text-slate-400" />
-              24/7 Rapid Dispatch
+          <div className="flex items-center gap-3 shrink-0 text-slate-400 text-[11px]">
+            <span className="flex items-center gap-1">
+              <Clock className="w-3 h-3 text-crimson-400" />
+              <span>24/7 Rapid Emergency Dispatch</span>
+            </span>
+            <span className="text-slate-600 hidden sm:inline">•</span>
+            <span className="text-slate-400 hidden sm:inline">
+              Fully Licensed & Insured
             </span>
           </div>
         </div>
@@ -86,7 +81,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-200">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6 text-sm font-semibold text-slate-200">
             <Link
               href="/"
               className="hover:text-crimson-400 transition-colors py-2"
@@ -215,8 +210,8 @@ export function Header() {
             <Link href="/projects" className="hover:text-crimson-400 transition-colors py-2">
               Projects
             </Link>
-            <Link href="/blog" className="hover:text-crimson-400 transition-colors py-2">
-              Guides
+            <Link href="/blog" className="hover:text-crimson-400 transition-colors py-2 whitespace-nowrap">
+              Blog
             </Link>
             <Link href="/about" className="hover:text-crimson-400 transition-colors py-2">
               About

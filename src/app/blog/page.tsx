@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { business } from '@/config/business';
-import { BookOpen, Calendar, Clock, ArrowRight, ShieldCheck, Award, Snowflake, Sparkles, AlertOctagon, Scale, Droplets, DollarSign, Compass } from 'lucide-react';
+import { BookOpen, Calendar, Clock, ArrowRight, ShieldCheck, Award, Snowflake, Sparkles, AlertOctagon, Scale, Droplets, DollarSign, Compass, Zap, ThermometerSnowflake } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Maine Roofing Insights & Knowledge Hub | Maine Roofing Scapes & Repairs',
@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     'commercial roof restoration maine',
     'ice dam removal maine guide',
     'metal roof cost maine',
+    'heating cables snow guards maine',
+    'freeze thaw roof leaks maine',
     'emergency roof repair maine',
     'how to choose roofing contractor maine',
     'brown water stain ceiling after snow',
@@ -22,6 +24,42 @@ export const metadata: Metadata = {
 };
 
 const articles = [
+  {
+    slug: 'heating-cables-snow-guards-maine',
+    title: 'Heating Cables & Snow Guards in Maine: Stop Coastal Ice Dams & Roof Avalanches',
+    excerpt: 'How self-regulating heat trace cables melt escape channels through ice dams, and why continuous snow retention bars are mandatory to prevent dangerous metal roof snow slides in coastal Maine.',
+    category: 'Winter Defense & Structural Safety',
+    categoryColor: 'bg-amber-100 text-amber-900',
+    icon: Zap,
+    image: '/images/hero/metal-roof-winter-snow.png',
+    readTime: '9 min read',
+    publishedDate: 'October 2026',
+    author: 'Safety & Materials Engineering Team'
+  },
+  {
+    slug: 'freeze-thaw-roof-leaks-maine',
+    title: 'Why Your Roof Only Leaks in January and February: The Science of Maine Freeze-Thaw Infiltration',
+    excerpt: 'Why your roof stays dry in summer thunderstorms but leaks in mid-winter. The physics of diurnal thermal cycles, capillary water suction, flashing contraction, and attic frost melting.',
+    category: 'Forensic Roof Diagnostics',
+    categoryColor: 'bg-blue-100 text-blue-900',
+    icon: ThermometerSnowflake,
+    image: '/images/hero/ice-dam-removal-maine.png',
+    readTime: '8 min read',
+    publishedDate: 'October 2026',
+    author: 'Forensic Inspection Division'
+  },
+  {
+    slug: 'commercial-roof-winterization-checklist-maine',
+    title: 'Commercial Roof Winterization Checklist: 7 Mandatory Steps Before Maine’s First Snowstorm',
+    excerpt: 'How Maine commercial facility managers and warehouse owners prevent winter flat roof collapse, frozen scuppers, and costly moisture infiltration through a 7-step inspection protocol.',
+    category: 'Commercial Winterization & Safety',
+    categoryColor: 'bg-blue-100 text-blue-900',
+    icon: Snowflake,
+    image: '/images/hero/commercial-roof-winterization-maine.jpg',
+    readTime: '9 min read',
+    publishedDate: 'October 2026',
+    author: 'Commercial Operations & Engineering Team'
+  },
   {
     slug: 'section-179-commercial-roof-replacement-tax-deduction-maine',
     title: 'Section 179 Commercial Roof Tax Deduction: How Maine Business Owners Write Off 100% of Roof Costs',

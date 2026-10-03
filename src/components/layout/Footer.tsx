@@ -125,9 +125,27 @@ export function Footer() {
             </p>
             <div className="flex flex-wrap gap-1.5 text-xs">
               {['Portland', 'Lewiston', 'Bangor', 'Augusta', 'Auburn', 'Biddeford', 'Sanford', 'Windham', 'Brunswick', 'Manchester NH', 'Portsmouth NH'].map((city) => (
-                <span key={city} className="bg-slate-900 border border-slate-800 text-slate-300 px-2 py-1 rounded">
-                  {city}
-                </span>
+                city === 'Portland' ? (
+                  <Link
+                    key={city}
+                    href="/service-areas/portland-me"
+                    className="bg-slate-900 hover:bg-slate-800 border border-crimson-600/50 hover:border-crimson-400 text-crimson-300 hover:text-white px-2 py-1 rounded transition-colors font-semibold"
+                  >
+                    {city}
+                  </Link>
+                ) : (city === 'Lewiston' || city === 'Auburn') ? (
+                  <Link
+                    key={city}
+                    href="/service-areas/lewiston-auburn-me"
+                    className="bg-slate-900 hover:bg-slate-800 border border-crimson-600/50 hover:border-crimson-400 text-crimson-300 hover:text-white px-2 py-1 rounded transition-colors font-semibold"
+                  >
+                    {city}
+                  </Link>
+                ) : (
+                  <span key={city} className="bg-slate-900 border border-slate-800 text-slate-300 px-2 py-1 rounded">
+                    {city}
+                  </span>
+                )
               ))}
             </div>
 
