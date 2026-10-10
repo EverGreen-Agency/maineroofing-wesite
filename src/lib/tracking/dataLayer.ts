@@ -35,7 +35,17 @@ export function pushToDataLayer(data: DataLayerEvent): void {
   if (!isProd) return;
 
   window.dataLayer = window.dataLayer || [];
+  // 1. Standard GTM event push
   window.dataLayer.push(data);
+
+  // 2. Direct GA4 native dispatch (guarantees GA4 stream receives it even without custom GTM tag)
+  const { event, ...params } = data;
+  const win = window as unknown as { gtag?: (...args: unknown[]) => void; dataLayer: unknown[] };
+  if (typeof win.gtag === 'function') {
+    win.gtag('event', event, params);
+  } else {
+    win.dataLayer.push(['event', event, params]);
+  }
 }
 
 // Track phone clicks

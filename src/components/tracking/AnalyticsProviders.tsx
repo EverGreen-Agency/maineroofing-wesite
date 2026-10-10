@@ -86,9 +86,9 @@ export function AnalyticsProviders() {
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_ID}', {
+                window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+                window.gtag('js', new Date());
+                window.gtag('config', '${GA_ID}', {
                   page_path: window.location.pathname,
                   send_page_view: true
                 });
